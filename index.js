@@ -5,7 +5,9 @@ const StratumFive = class StratumFive {
   constructor() {
     const t = this;
 
-    t.navigation = new Navigation({});
+    t.navigation = new Navigation({
+      grid: { boundaries: [50, 50] },
+    });
   }
 
   init() {
