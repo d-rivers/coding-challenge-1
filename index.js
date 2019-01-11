@@ -32,7 +32,8 @@ const StratumFive = class StratumFive {
       .catch(error => error);
 
     if (!validation.valid) {
-      callback();
+      activeCommand.log('error...', validation.message);
+      return callback();
     }
 
     const next = t.navigation.line === 0 ? 'positioning' : 'instructions';
@@ -45,7 +46,7 @@ const StratumFive = class StratumFive {
 
     t.navigation.toggle();
 
-    callback();
+    return callback();
   }
 };
 
