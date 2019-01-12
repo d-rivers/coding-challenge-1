@@ -34,7 +34,7 @@ const StratumFive = class StratumFive {
       .catch(error => error);
 
     if (!validation.valid) {
-      activeCommand.log('validation.message', validation.message);
+      activeCommand.log(validation.message);
       return callback();
     }
 
@@ -45,7 +45,7 @@ const StratumFive = class StratumFive {
       .catch(error => error);
 
     if (!exe.valid) {
-      activeCommand.log('exe.message', exe.message);
+      activeCommand.log(exe.message);
       return callback();
     }
 
