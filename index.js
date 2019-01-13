@@ -1,60 +1,61 @@
 const vorpal = require('vorpal')();
-const Navigation = require('./lib/navigation');
+const ControlCenter = require('./lib/control-center');
 
-const StratumFive = class StratumFive {
-  constructor() {
+const StratumFive = class StratumFive extends ControlCenter {
+  constructor(props) {
+    super(props);
+
     const t = this;
 
-    t.navigation = new Navigation({
-      grid: { boundaries: [50, 50] },
-    });
+    t.vorpal = props.vorpal;
   }
 
   init() {
     const t = this;
 
-    vorpal
-      .mode('navigation')
-      .description('Enter the user into navigation mode.')
-      .delimiter('navigation:')
+    t.vorpal
+      .mode('controlcenter')
+      .description('Enter the user into a control centre.')
+      .delimiter('controlcenter:')
       .action(t.action.bind(t));
 
-    vorpal
+    t.vorpal
       .delimiter('StratumFive$')
       .show();
   }
 
   async action(command, callback) {
     const t = this;
-    const { activeCommand } = vorpal;
 
-    const validation = await t.navigation
-      .validate(command)
+    const validation = await t.validate(command)
       .then(response => response)
       .catch(error => error);
 
     if (!validation.valid) {
-      activeCommand.log(validation.message);
+      t.vorpal.activeCommand.log(validation.message);
       return callback();
     }
 
-    const next = t.navigation.line === 0 ? 'positioning' : 'instructions';
+    const next = t.line === 0 ? 'positioning' : 'instructions';
 
-    const exe = await t.navigation[next](command)
+    const exe = await t[next](command)
       .then(response => response)
       .catch(error => error);
 
     if (!exe.valid) {
-      activeCommand.log(exe.message);
+      t.vorpal.activeCommand.log(exe.message);
       return callback();
     }
 
-    t.navigation.toggle();
+    t.toggle();
 
     return callback();
   }
 };
 
-const stratumFive = new StratumFive();
+const stratumFive = new StratumFive({
+  vorpal,
+  grid: { boundaries: [50, 50] },
+});
 
 stratumFive.init();
