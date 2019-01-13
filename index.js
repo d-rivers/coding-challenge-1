@@ -10,12 +10,19 @@ const StratumFive = class StratumFive extends ControlCenter {
     t.vorpal = props.vorpal;
   }
 
+  /**
+   * @description
+   * Set up vorpal cmd
+   *
+   * Enter 'controlcenter' to begin positioning
+   * & instructional commands.
+   */
   init() {
     const t = this;
 
     t.vorpal
       .mode('controlcenter')
-      .description('Enter the user into a control centre.')
+      .description('Enter the user into a control center.')
       .delimiter('controlcenter:')
       .action(t.action.bind(t));
 
@@ -24,6 +31,16 @@ const StratumFive = class StratumFive extends ControlCenter {
       .show();
   }
 
+  /**
+   * @description
+   * Invokes command validation.
+   * Invokes positioning/instructions promises.
+   * Toggles line to determine active command type.
+   *
+   * @param command
+   * @param callback
+   * @returns {Promise<*>}
+   */
   async action(command, callback) {
     const t = this;
 
@@ -43,7 +60,6 @@ const StratumFive = class StratumFive extends ControlCenter {
       .catch(error => error);
 
     if (!exe.valid) {
-      t.vorpal.activeCommand.log(exe.message);
       return callback();
     }
 
