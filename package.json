@@ -4,7 +4,7 @@
   "description": "StratumFive - Coding Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "stratum-five": "node ./index.js"
   },
   "repository": {
     "type": "git",
