@@ -1,5 +1,18 @@
 # StratumFive - Coding Challenge
 
+## Running The Project
+- ```npm i```
+- ```npm run stratum-five``` or ```node ./index.js```
+- ```controlstation```
+- Happy commanding :)
+
+### What I'd do next given more time?
+
+- Overall code improvements/optimisations (I can give this some more thought).
+- Improve Validations.
+- Learn and use Commander.js?
+- Write Tests.
+
 ## Introduction
 Welcome to the StratumFive Coding Challenge. Please take ten minutes to carefully read through this document before starting the challenge.
 * We expect you to spend in the region of a few hours on this challenge. If you do not complete it then please still submit your work.
