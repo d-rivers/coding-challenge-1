@@ -9,6 +9,9 @@
 ### What I'd do next given more time?
 
 - Overall code improvements/optimisations (I can give this some more thought).
+    - Consolidate repeated code in lib/stratum-five/index.js action
+    - Use ```[@@iterator]()``` within move fn, calling next while !done.
+    - Detect earlier if a ship will be lost. If not, calculate the final orientation/coordinates instead of += 1.
 - Improve Validations.
 - Learn and use Commander.js?
 - Write Tests.
