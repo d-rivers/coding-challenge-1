@@ -9,8 +9,9 @@
 ### What I'd do next given more time?
 
 - Overall code improvements/optimisations (I can give this some more thought).
-    - Consolidate repeated code in lib/stratum-five/index.js action
-    - Detect earlier if a ship will be lost. If not, calculate the final orientation/coordinates instead of += 1.
+    - Consolidate repeated code in lib/stratum-five/index.js action.
+    - Matching L|R|F characters directly next to each other for a instruction remain as one item.
+        - The idea would be to pass in an additional argument to turn/forward, limiting the need to invoke those methods multiple times.
 - Improve Validations.
 - Learn and use Commander.js?
 - Write Tests.
