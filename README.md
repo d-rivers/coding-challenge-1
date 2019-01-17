@@ -12,6 +12,7 @@
     - Consolidate repeated code in lib/stratum-five/index.js action.
     - Matching L|R|F characters directly next to each other for a instruction remain as one item.
         - The idea would be to pass in an additional argument to turn/forward, limiting the need to invoke those methods multiple times.
+    - Change the orientation values to [0, 1, 2, 3] and store ['N', 'E', 'S', 'W'] in an array so the orientation/index can correspond with the direction.
 - Improve Validations.
 - Learn and use Commander.js?
 - Write Tests.
