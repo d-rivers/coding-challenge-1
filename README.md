@@ -16,6 +16,9 @@
 - Learn and use Commander.js?
 - Write Tests.
 
+### Note
+Possible misinterpretation regarding input. It's possible all command entries were required before outputting results.
+
 ## Introduction
 Welcome to the StratumFive Coding Challenge. Please take ten minutes to carefully read through this document before starting the challenge.
 * We expect you to spend in the region of a few hours on this challenge. If you do not complete it then please still submit your work.
