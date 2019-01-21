@@ -3,8 +3,8 @@
 ## Running The Project
 - ```npm i```
 - ```npm run stratum-five``` or ```node ./index.js```
-- ```controlstation```
-- Happy commanding :)
+- Enter ```controlstation``` for manual entry
+- Enter ```start``` for processing from input file
 
 ### What I'd do next given more time?
 
