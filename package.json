@@ -1,0 +1,29 @@
+{
+  "name": "coding-challenge-1",
+  "version": "1.0.0",
+  "description": "StratumFive - Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "stratum-five": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-rivers/coding-challenge-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-rivers/coding-challenge-1/issues"
+  },
+  "homepage": "https://github.com/d-rivers/coding-challenge-1#readme",
+  "dependencies": {
+    "vorpal": "^1.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3"
+  }
+}
