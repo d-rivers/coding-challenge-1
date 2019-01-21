@@ -15,21 +15,6 @@
 - Improve Validations.
 - Write Tests.
 
-## Introduction
-Welcome to the StratumFive Coding Challenge. Please take ten minutes to carefully read through this document before starting the challenge.
-* We expect you to spend in the region of a few hours on this challenge. If you do not complete it then please still submit your work.
-* If you do not have a github account you will have to create one
-* [Fork](https://help.github.com/articles/fork-a-repo/) this repository
-* **Commit your code frequently. This is how we will review your submission.**
-* If you do not have time to fully complete the challenge, please still push it and indicate what your next steps would be. Remember to try to solve the hardest problems first.
-* Use any language and frameworks you want
-* We are not asking for a clever, over engineered or obfuscated solution. Please be as pragmatic as possible.
-* User interface design is not the focus of the problem although we will not mark you down for creating a UI.
-* We should be able to run your code without any crazy steps
-* Make use of the sample data
-* Make sure your final solution is on master
-* **Let us know when you complete the challenge**
-
 ## Problem: Survey Ships
 ### The Problem
 The surface of the ocean can be modelled by a rectangular grid around which ships are able to move according to instructions provided from a control station. You are to write a program that determines each sequence of ship positions and reports the final position of the ship.
@@ -64,6 +49,3 @@ LLFFFLFLFL
 1 1 E\
 3 3 N LOST\
 2 3 S
-
-## Finally
-**Tell us when you have completed the challenge**
