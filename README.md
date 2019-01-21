@@ -9,6 +9,7 @@
 ### What I'd do next given more time?
 
 - Overall code improvements/optimisations (e.g.).
+    - Handle large input data with EventStream.
     - Matching L|R|F characters directly next to each other for a instruction remain as one item.
         - The idea would be to pass in an additional argument to turn/forward, limiting the need to invoke those methods multiple times.
 - Improve Validations.
