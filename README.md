@@ -8,16 +8,11 @@
 
 ### What I'd do next given more time?
 
-- Overall code improvements/optimisations (I can give this some more thought).
-    - Consolidate repeated code in lib/stratum-five/index.js action.
+- Overall code improvements/optimisations (e.g.).
     - Matching L|R|F characters directly next to each other for a instruction remain as one item.
         - The idea would be to pass in an additional argument to turn/forward, limiting the need to invoke those methods multiple times.
 - Improve Validations.
-- Learn and use Commander.js?
 - Write Tests.
-
-### Note
-Possible misinterpretation regarding input. It's possible all command entries were required before outputting results.
 
 ## Introduction
 Welcome to the StratumFive Coding Challenge. Please take ten minutes to carefully read through this document before starting the challenge.
