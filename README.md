@@ -1,8 +1,8 @@
-# StratumFive - Coding Challenge
+# Coding Challenge
 
 ## Running The Project
 - ```npm i```
-- ```npm run stratum-five``` or ```node ./index.js```
+- ```npm run challenge``` or ```node ./index.js```
 - Enter ```controlstation``` for manual entry
 - Enter ```start``` for processing from input file
 

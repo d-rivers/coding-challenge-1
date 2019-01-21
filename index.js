@@ -1,6 +1,6 @@
 const vorpal = require('vorpal')();
-const StratumFive = require('./lib/stratum-five');
+const Challenge = require('./lib/challenge');
 
-const sf = new StratumFive({ vorpal });
+const sf = new Challenge({ vorpal });
 
 sf.init();
