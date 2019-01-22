@@ -4,7 +4,8 @@
   "description": "Coding Challenge",
   "main": "index.js",
   "scripts": {
-    "challenge": "node ./index.js"
+    "challenge": "node ./index.js",
+    "input-gen": "node ./lib/challenge/generate-input.js"
   },
   "repository": {
     "type": "git",
