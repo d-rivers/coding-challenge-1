@@ -4,7 +4,8 @@
   "description": "Coding Challenge",
   "main": "index.js",
   "scripts": {
-    "challenge": "node ./index.js"
+    "challenge": "node ./index.js",
+    "input-gen": "node ./lib/challenge/generate-input.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/d-rivers/coding-challenge-1#readme",
   "dependencies": {
+    "event-stream": "^4.0.1",
+    "firstline": "^2.0.2",
     "vorpal": "^1.12.0"
   },
   "devDependencies": {
