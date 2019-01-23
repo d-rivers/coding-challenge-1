@@ -2,17 +2,15 @@
 
 ## Running The Project
 - ```npm i```
-- ```npm run challenge``` or ```node ./index.js```
-- Enter ```controlstation``` for manual entry
-- Enter ```start``` for processing from input file
+- ```npm run input-gen```
+- ```npm run challenge```
 
 ### What I'd do next given more time?
 
 - Overall code improvements/optimisations (e.g.).
-    - Handle large input data with EventStream.
     - Matching L|R|F characters directly next to each other for a instruction remain as one item.
         - The idea would be to pass in an additional argument to turn/forward, limiting the need to invoke those methods multiple times.
-- Improve Validations.
+    - Improve Validations.
 - Write Tests.
 
 ## Problem: Survey Ships
