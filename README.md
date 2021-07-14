@@ -5,14 +5,6 @@
 - ```npm run input-gen```
 - ```npm run challenge```
 
-### What I'd do next given more time?
-
-- Overall code improvements/optimisations (e.g.).
-    - Matching L|R|F characters directly next to each other for a instruction remain as one item.
-        - The idea would be to pass in an additional argument to turn/forward, limiting the need to invoke those methods multiple times.
-    - Improve Validations.
-- Write Tests.
-
 ## Problem: Survey Ships
 ### The Problem
 The surface of the ocean can be modelled by a rectangular grid around which ships are able to move according to instructions provided from a control station. You are to write a program that determines each sequence of ship positions and reports the final position of the ship.
